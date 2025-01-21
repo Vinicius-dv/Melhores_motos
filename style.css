@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Poppins", serif;
+    color: #F10303;
+}
+
+header{
+    width: 100%;
+    height: 170px;
+    background-color: #F10303;
+    color: white;
+}
+nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div_logo{
+    width: 50%;
+    margin-left: 3%;
+}
+
+.img_logo{
+    width: 150px;
+    height: 170px;
+}
+
+.ul_itens{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 4%;
+    gap: 20px;
+}
+
+.ul_itens li a{
+    color: white;
+    font-size: 1.3em;
+    font-weight: bold;
+    transition: color 0.5s;
+}
+
+.ul_itens li a:hover{
+    color: black;
+}
+
+.nav_itens span{
+    display: none;
+}
+
+/*Media header*/
+
+@media(max-width:768px){
+    .nav_itens{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin: 12px 0px;
+        text-align: center;
+    }
+    .ul_itens{
+        display: none;
+    }
+    .ul_itens.active{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .ul_itens li a{
+        color: #F10303;
+    }
+    
+    .nav_itens span{
+        display: block;
+        font-size: 2.5em;
+        cursor: pointer;
+        margin-right: 5%;   
+        color: #F10303;
+        transition: color 0.5s;
+    }
+    .nav_itens span:hover{
+        color: black;
+    }
+}
+/* Fim Media header*/
+
