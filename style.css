@@ -55,48 +55,52 @@ nav{
     color: #F10303;
 }
 
-.menu-toggle {
+.mobile-btn{
     display: none;
-    flex-direction: column;
-    gap: 0.4rem;
-    background: none;
-    border: none;
-    cursor: pointer;
+}
+#mobile-menu{
+    display: none;
 }
 
-
-.bar {
-    width: 25px;
-    height: 3px;
-    background: white;
-    margin-right: 20px;
-}
 
 /*Media header*/
-@media screen and (max-width: 768px) {
-    .menu-toggle {
-        display: flex;
+@media(max-width: 1170px){
+ 
+    .ul_itens{
+        display: none;
     }
 
-    .ul_itens {
-        display: none;
+    #mobile-btn{
+        display: block;
+        border: none;
+        font-size: 1.5em;
+        cursor: pointer;
+        background-color: #8A8381;
+        margin-right: 20px;
+    }
+    #mobile-menu.active{
+        display: flex;
         flex-direction: column;
-        position: absolute;
-        top: 24%;
-        background-color:#1e120d85;
-        width: 100%;
-        padding: 20px 0;
-        gap: 10px;
+        justify-content: center;
         align-items: center;
     }
-
-    .ul_itens.show {
+    #mobile-nav-list{
+        width: 100%;
+        padding: 20px;
         display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 3px;
+        text-align: center;
+        background-color: #1e120d85;
     }
-
-    .ul_itens li a {
-        font-size: 1.5rem;
+    .nav-item a{
+        color: white;
+        transition: color 0.5s;
     }
+    .nav-item a:hover{
+        color: #F10303;
+    }   
 }
 /* Fim Media header*/
 
