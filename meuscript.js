@@ -1,6 +1,8 @@
-const burguer = document.getElementById('burguer')
-const ul_itens = document.querySelector('.ul_itens')
-burguer.addEventListener('click',()=>{
-    ul_itens.classList.toggle('active')
-    console.log(ul_itens)
-})
+document.addEventListener("DOMContentLoaded", () => {
+    const menuToggle = document.getElementById("menu-toggle")
+    const navLinks = document.getElementById("ul_itens")
+
+    menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("show")
+    });
+});

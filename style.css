@@ -10,11 +10,12 @@
     font-family: "Poppins", serif;
     color: #F10303;
 }
+/*#1E120D*/
 
 header{
     width: 100%;
     height: 170px;
-    background-color: #F10303;
+    background-color:#1e120d85 ;
     color: white;
 }
 nav{
@@ -51,45 +52,50 @@ nav{
 }
 
 .ul_itens li a:hover{
-    color: black;
+    color: #F10303;
 }
 
-.nav_itens span{
+.menu-toggle {
     display: none;
+    flex-direction: column;
+    gap: 0.4rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin-right: 20px;
 }
 
 /*Media header*/
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
 
-@media(max-width:768px){
-    .nav_itens{
-        display: flex;
-        flex-direction: column;
-        gap: 12px;      
-        text-align: center;
-    }
-    .ul_itens{
+    .ul_itens {
         display: none;
-    }
-    .ul_itens.active{
-        display: flex;
         flex-direction: column;
-        justify-content: center;
+        position: absolute;
+        top: 24%;
+        background-color:#1e120d85;
+        width: 100%;
+        padding: 20px 0;
+        gap: 10px;
         align-items: center;
     }
-    .ul_itens li a{
-        color: #F10303;
+
+    .ul_itens.show {
+        display: flex;
     }
-    
-    .nav_itens span{
-        display: block;
-        font-size: 2.5em;
-        cursor: pointer;
-        margin-right: 5%;   
-        color: #F10303;
-        transition: color 0.5s;
-    }
-    .nav_itens span:hover{
-        color: black;
+
+    .ul_itens li a {
+        font-size: 1.5rem;
     }
 }
 /* Fim Media header*/
