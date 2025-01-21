@@ -58,6 +58,9 @@ nav{
 .mobile-btn{
     display: none;
 }
+.mobile-btn i{
+    color: white;
+}
 #mobile-menu{
     display: none;
 }
