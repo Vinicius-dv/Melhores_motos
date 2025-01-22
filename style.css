@@ -15,7 +15,7 @@
 header{
     width: 100%;
     height: 170px;
-    background-color:#1e120d85 ;
+    background-color: #DDDDDD;
     color: white;
 }
 nav{
@@ -96,6 +96,7 @@ nav{
         margin-top: 3px;
         text-align: center;
         background-color: #1e120d85;
+        z-index: 1000;
     }
     .nav-item a{
         color: white;
@@ -107,4 +108,17 @@ nav{
     }   
 }
 /* Fim Media header*/
+
+/*Estilos apresentação*/
+.fundo_img{
+    width: 100%;
+    height: 100%;
+}
+.img_aprensentação{
+  width: 100%;
+  height: 300px;
+}
+.fundo_img:hover{
+   opacity: 0.8;
+}
 
