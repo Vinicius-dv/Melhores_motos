@@ -10,7 +10,7 @@
     font-family: "Poppins", serif;
     color: #F10303;
 }
-/*#1E120D*/
+
 
 header{
     width: 100%;
@@ -110,15 +110,284 @@ nav{
 /* Fim Media header*/
 
 /*Estilos apresentação*/
-.fundo_img{
-    width: 100%;
-    height: 100%;
+
+
+/*Estilos main_card*/
+.marcas{
+    width: 20%;
+    margin: 0px 0px 0px -13%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
 }
-.img_aprensentação{
-  width: 100%;
-  height: 300px;
+.marcas h1{
+    font-size: 1.4em;
+    color: black;
 }
-.fundo_img:hover{
-   opacity: 0.8;
+.marcas p{
+    color: rgba(0, 0, 0, 0.755);
+}
+.marcas span{
+    width: 150px;
+    text-align: center;
+    margin: auto;
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+    border-radius: 5px;
+}
+.marcas span:hover{
+    width: 150px;
+    background-color:#ddddddc1;
+    transform: translateY(-5px);
 }
 
+.h1_estoque{
+    font-size: 1.3em;
+    color: black;
+    font-weight: 500;
+    text-align: center;
+    position: relative;
+    margin: 40px  0px 50px 0px;
+}
+
+
+.h1_estoque::after {
+    content: "";
+    display: block;
+    width: 80px; 
+    height: 4px;
+    background-color: #a27c40;
+    margin: 8px auto 0;
+  }
+
+.main_cards{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.cards:hover{
+    transform: translateY(-5px);
+}
+
+
+.card_img img{
+    position: absolute;
+    width: 330px;
+    height: 250px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.desc_card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 330px;
+    height: 260px;
+    border-radius: 0px 0px 10px 10px;
+    margin-top: 180px;
+    background-color: #DDDDDD;
+}
+
+.spam_nome{
+    width: 90px;
+    background-color: #AC8A3F;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 16px;
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.spam_nome:hover{
+    background-color: #a27c40b4;
+    transform: translateY(-5px);
+}
+
+.desc_card h1,.p_preço{
+    color: black;
+    font-weight: 500;
+}
+
+.p_preço{
+    padding-top: 20px;
+    color: #a27c40;
+}
+
+.desc_card h1{
+    font-size: 16px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+.span_desc{
+    position: relative;
+    top: 18%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    border-top: 1px solid black;
+}
+.span_desc p{
+    color: black;
+    font-weight: 300;
+}
+
+#card_margin{
+    margin-left: 7%;
+}
+@media(max-width: 1170px){
+    .marcas{
+        display: none;
+    }
+    #card_margin{
+        margin-left: 0px;
+    }
+}
+
+@media(max-width: 1300px){
+    .marcas{
+        display: none;
+    }
+    #card_margin{
+        margin-left: 0px;
+    }
+}
+/*Fim estilos main_card*/
+
+
+/*Estilos modal*/
+
+.card_modal{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.705);
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+}
+
+.conteudo_modal{
+    display: flex;
+    margin: auto;
+    margin-top: 8%;
+    background-color: white;
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+    border-radius: 10px;
+    flex-direction: column;
+}
+.titulo_modal{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.titulo_modal h1{
+    font-size: 1.3em;
+    color: black;
+    font-weight: 300;
+    margin-left: 30px;
+}
+.titulo_modal p{
+    color: black;
+    margin-right: 10%;
+}
+.img_modal{
+   display: flex;
+   margin-left: 20px;
+   width: 100%;
+   gap: 20px;
+}
+.img_modal img{
+    border-radius: 10px;
+}
+
+.icon_modal{
+    background-color: #8a838197;
+    text-align: center;
+    border-top: 1px solid white;
+}
+.icon_modal i{
+    color: #a27c40;
+}
+.icon_modal p{
+    color: white;
+}
+
+.btn_modal{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.whats_btn{
+    width: 300px;
+    height: 60px;
+    background-color:#a27c40;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 5%;
+    transition: background 0.5s;
+}
+
+.whats_btn:hover{
+    background-color: black;
+}
+
+.financiamento{
+    width: 300px;
+    height: 60px;
+    background-color:#a27c40;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 5%;
+    transition: background 0.5s;
+}
+.financiamento:hover{
+    background-color: black;
+}
+.Avalie{
+    width: 300px;
+    height: 60px;
+    background-color:#a27c40;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 5%;
+    transition: background 0.5s;
+}
+.Avalie:hover{
+    background-color: black;
+}
+
+@media(max-width: 1170px){
+    .card_modal{
+        display: none !important; 
+    }
+}
+
+@media(max-width: 1300px){
+    .conteudo_modal{
+        width: 80%;
+    }
+}
+/*Fim estilos modal*/
