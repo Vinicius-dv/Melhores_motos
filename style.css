@@ -263,7 +263,7 @@ nav{
 #card_margin{
     margin-left: 7%;
 }
-@media(max-width: 1170px){
+@media(max-width: 768px){
     .marcas{
         display: none;
     }
