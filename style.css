@@ -117,15 +117,20 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     margin-top: 20px;
     width: 100%;
     height: 100%;
 }
-.fundo_div img{
-    width: 95%;
-    height: 350px;
-    object-fit: cover;
-    border-radius: 20px;
+
+.fundo_div h1{
+    color: black;
+    text-align: center;
+}
+.fundo_div p{
+    color: black;
+    font-size: 1.2em;
+    text-align: center;
 }
 
 .marcas{
