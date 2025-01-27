@@ -126,15 +126,13 @@ nav{
 .fundo_div h1{
     color: black;
     text-align: center;
-    text-decoration: underline;
-    text-decoration-color: #d214277a;
+    border-bottom: 2px solid #d214277a;
 }
 .fundo_div p{
     color: black;
     font-size: 1.2em;
     text-align: center;
-    text-decoration: underline;
-    text-decoration-color: #d214277a;
+    border-bottom: 2px solid #d214277a;
 }
 
 .marcas{
