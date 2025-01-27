@@ -127,13 +127,14 @@ nav{
     color: black;
     text-align: center;
     border-bottom: 3px solid #d214277a;
+    padding-bottom: 5px;
 }
 .fundo_div p{
     color: black;
     font-size: 1.2em;
     text-align: center;
     border-bottom: 3px solid #d214277a;
-    width: 70%;
+    padding-bottom: 5px;
 }
 
 .marcas{
@@ -283,6 +284,9 @@ nav{
         width: 100%;
         height: 150px;
         border-radius: 5px;
+    }
+    .fundo_div p{
+        width: 70%;
     }
 }
 
