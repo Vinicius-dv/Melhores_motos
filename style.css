@@ -137,6 +137,18 @@ nav{
     padding-bottom: 5px;
 }
 
+.a_banner {
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    text-decoration-thickness: 2px;
+    transition: text-decoration-color 0.5s ease-in-out, text-decoration-thickness 0.5s ease-in-out;
+}
+
+.a_banner:hover{
+    text-decoration-color: #D21428;
+    text-decoration-thickness: 2px;
+}
+
 .marcas{
     width: 20%;
     margin: 0px 0px 0px -13%;
